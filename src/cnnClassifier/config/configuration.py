@@ -110,7 +110,9 @@ class ConfigurationManager:
             training_data=Path("artifacts/data_ingestion/Chicken-fecal-images"),
             all_params=self.params,
             params_image_size=self.params.IMAGE_SIZE,
-            params_batch_size=self.params.BATCH_SIZE
+            params_batch_size=self.params.BATCH_SIZE,
+            mlflow_uri="https://dagshub.com/satyamsc0/chicken-disease.mlflow",
+            experiment_name="chicken-disease-classification",
+            run_name="latest-run"
         )
         return eval_config
-

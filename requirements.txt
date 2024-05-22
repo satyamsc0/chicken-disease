@@ -14,4 +14,5 @@ types-PyYAML
 scipy
 Flask  # for creating web applications / api's
 Flask-Cors
--e .  # because of setup.py to use this as a package
+mlflow==2.2.2
+# -e .  # because of setup.py to use this as a package

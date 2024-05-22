@@ -59,6 +59,32 @@ open up you local host and port
 
 
 
+### Tensorboard:
+```bash
+tensorboard --logdir artifacts/prepare_callbacks/tensorboard_log_dir/
+```
+
+
+### MLflow
+
+```bash
+mlflow ui
+```
+
+
+### Dagshub
+
+MLFLOW_TRACKING_URI=https://dagshub.com/satyamsc0/chicken-disease.mlflow \
+MLFLOW_TRACKING_USERNAME=satyamsc0 \
+MLFLOW_TRACKING_PASSWORD=5a7753b233a8bdd1a304ece714880751be9fda6e \
+python script.py
+
+```bash
+export MLFLOW_TRACKING_URI=https://dagshub.com/satyamsc0/chicken-disease.mlflow
+export MLFLOW_TRACKING_USERNAME=satyamsc0
+export MLFLOW_TRACKING_PASSWORD=5a7753b233a8bdd1a304ece714880751be9fda6e
+```
+
 
 # AZURE-CICD-Deployment-with-Github-Actions
 
